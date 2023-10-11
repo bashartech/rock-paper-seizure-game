@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Rock Paper Seizure Game
+    
+    </title>
+    <style>
+        /* body {
+    display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: aqua;
+  font-family: inherit;
+  border: bisque;
+  margin: 226px;
+  font-size: 30px;
+  color: #d00b0b;
+  transition: ease-in;
+  font-style: oblique;
+} */
+    </style>
+</head>
+<body>
+  
+    <!-- <button onclick = "alert('container ha' )">click here</button>
+  </div> -->
+
+    <!-- <button onclick="
+        calculation +='1'
+        console.log(calculation);
+        ">1</button>
+   <button onclick="
+    calculation +='2'
+    console.log(calculation);
+    ">2</button>
+   <button onclick="
+    calculation +='3'
+    console.log(calculation);
+    ">3</button>
+    <button onclick="
+    calculation +=' + '
+    console.log(calculation);
+    ">+</button>
+   <button onclick="
+    eval(calculation);
+    calculation = eval(calculation);
+    console.log(calculation);
+    ">=</button> -->
+<link rel="stylesheet" href="index.js">
+    <script>
+       let calculation = '';
+let user = prompt("Enter rock , paper or seizure" )
+let cpuI = Math.floor(Math.random()*3);
+let cpu = ["rock", "paper","seizure"][cpuI]
+const match = (cpu ,user)=>{
+  if (cpu === user) {
+     return 0
+
+}
+else if (cpu === "rock" && user === "seizure"){
+  return "cpu"
+}
+else if (cpu === "rock" && user === "Paper"){
+  return "user"
+}
+else if (cpu === "paper" && user === "seizure"){
+  return "user"
+}
+else if (cpu === "seizure" && user === "rock"){
+  return "user"
+}
+else if (cpu === "paper" && user === "rock"){
+  return "cpu"
+}
+else if (cpu === "paper" && user === "seizure"){
+  return "user"
+}
+}
+let result = match(cpu,user)
+document.write(`CPU:${cpu} <br> User:${user} <br>The winner is : ${result.toUpperCase()} `)
+
+    </script>
+</body>
+</html>

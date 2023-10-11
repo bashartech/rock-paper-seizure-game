@@ -1,0 +1,13 @@
+body {
+    display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: aqua;
+  font-family: inherit;
+  border: bisque;
+  margin: 226px;
+  font-size: 30px;
+  color: #d00b0b;
+  transition: ease-in;
+  font-style: oblique;
+}
